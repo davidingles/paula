@@ -1,0 +1,39 @@
+---
+const colorLight = 'rgb(0,0,0)'
+const colorDark = 'rgb(255,255,11)'
+
+interface Props {
+	color: string
+	tamaño: string
+}
+
+const { color, tamaño } = Astro.props
+---
+
+<style define:vars={{ colorLight, colorDark }}>
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		gap: 2rem;
+	}
+	.h1-grande {
+		color: light-dark(black, gray);
+		font-size: 5rem;
+	}
+	.h1-pequeño {
+		color: dark-light(black, gray);
+		font-size: 2rem;
+	}
+	span {
+		font-family: 'RELOJ', system-ui, sans-serif;
+		font-size: 6rem;
+	}
+</style>
+<main>
+	<h1 class={`h1-${tamaño}`}>Reloj</h1>
+	<span style={`color: ${color}`}> 000000 </span>
+	<button> Cambiar color </button>
+</main>

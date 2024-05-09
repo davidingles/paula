@@ -1,0 +1,17 @@
+---
+const { color } = Astro.props
+---
+
+<main class={`color-${color}`}>ccc</main>
+
+<style>
+	.color-red {
+		color: red;
+	}
+
+	.color-blue {
+		color: blue;
+	}
+
+	/* Agrega más clases para otros colores si es necesario */
+</style>
