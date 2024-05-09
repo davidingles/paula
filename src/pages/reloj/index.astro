@@ -1,0 +1,30 @@
+---
+import Layout2 from '../../layouts/Layout2.astro'
+---
+
+<Layout2 title='Reloj'>
+	<main>
+		<h1>Reloj</h1>
+		<span> 000000 </span>
+	</main>
+</Layout2>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		font-size: 3rem;
+		gap: 2rem;
+	}
+	h1 {
+		color: light-dark(black, gray);
+	}
+	span {
+		font-family: 'RELOJ', system-ui, sans-serif;
+		font-size: 6rem;
+		color: light-dark(black, red);
+	}
+</style>

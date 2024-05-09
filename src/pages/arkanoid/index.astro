@@ -1,0 +1,30 @@
+---
+import Layout2 from '../../layouts/Layout2.astro'
+---
+
+<Layout2 title='Arkanoid'>
+	<main>
+		<h1>Arkanoid</h1>
+		<canvas> </canvas>
+	</main>
+</Layout2>
+
+<style>
+	:root {
+		--color-canvas: red;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	h1 {
+		justify-content: center;
+		align-items: center;
+	}
+	canvas {
+		border: 1px solid var(--color-canvas);
+	}
+</style>

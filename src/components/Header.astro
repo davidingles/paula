@@ -1,33 +1,34 @@
 ---
 import BtnTheme from './BtnTheme.astro'
-import Prueba from './Prueba.astro'
 ---
 
 <main>
-	<h1>AUXILIAR MANIPULADORA DEL CARTÓN</h1>
+	<h1>EL MUNDO DE PAULA</h1>
 	<div>
 		<BtnTheme />
-	</div>
-	<div>
-		<Prueba />
 	</div>
 </main>
 
 <style>
-	div {
-		margin: 0;
-		padding: 0;
-	}
-
 	main {
 		display: flex;
 		border: 1px solid red;
+		background-color: light-dark(white, black);
+	}
+	div {
+		display: flex;
+		align-items: center;
+		color: light-dark(green, orange);
+		margin: 0 1rem;
+		padding: 0;
 	}
 	h1 {
+		padding: 1rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex: 1;
 		font-family: 'DEMI', sistem-ui, sans-serif;
+		color: light-dark(green, orange);
 	}
 </style>
